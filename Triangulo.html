@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Atividade 4 Triângulo</title>
+  </head>
+  <body>
+    <pre id="triangulo"></pre>
+
+    <script>
+      const linhas = parseInt(prompt("Digite o número total de linhas:"));
+      let texto = "";
+
+      for (let i = 1; i <= linhas; i++) {
+        texto += "*".repeat(i) + "\n";
+      }
+
+      document.getElementById("triangulo").textContent = texto;
+    </script>
+  </body>
+  </html>
